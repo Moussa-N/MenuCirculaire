@@ -1,0 +1,91 @@
+.header
+{
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background: url(c.jpg) no-repeat;
+	background-size: cover;
+	background-position:center; 
+}
+
+nav
+{
+	width: 100%;
+	position: fixed;
+	top: 50px;
+	text-align: center;
+}
+
+nav a
+{
+	font-family: poppins;
+	font-weight: 600;
+	text-transform: uppercase;
+	text-decoration: none;
+	color: #262626;
+	margin: 0 20px;
+	font-size: 16px;
+	letter-spacing: 3px;
+	position: relative;
+	display: inline-block;
+	transition: all 0.25s cubic-bezier(1,0,0.58,0.97);
+}
+
+nav a:before
+{
+	content: '';
+	position: absolute;
+	width: 0;
+	height: 2px;
+	top: calc(50% - 1.5px);
+	right: 0;
+	background: #262626;
+	transition: inherit;
+}
+
+nav a:hover:before
+{
+	top: 0;
+	width: 100%;
+}
+
+nav a:nth-child(1)
+{
+	animation: anim 0.2s 1.1s ease 1 both;
+}
+
+nav a:nth-child(2)
+{
+	animation: anim 0.2s 1.2s ease 1 both;
+}
+
+nav a:nth-child(3)
+{
+	animation: anim 0.2s 1.3s ease 1 both;
+}
+
+nav a:nth-child(4)
+{
+	animation: anim 0.2s 1.4s ease 1 both;
+}
+
+nav a:nth-child(5)
+{
+	animation: anim 0.2s 1.5s ease 1 both;
+}
+
+@keyframes anim
+{
+	0%
+	{
+		opacity: 0;
+		transform: translateY(-10px);
+	}
+	100%
+	{
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
